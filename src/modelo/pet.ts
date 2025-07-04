@@ -1,3 +1,4 @@
+
 export default class Pet {
     private nome: string
     private tipo: string

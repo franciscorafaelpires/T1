@@ -1,13 +1,11 @@
-import Entrada from "../io/entrada"
-import Cliente from "../modelo/cliente"
-import CPF from "../modelo/cpf"
-import Cadastro from "./cadastro"
+import Entrada from "../../io/entrada"
+import Cliente from "../../modelo/cliente"
+import CPF from "../../modelo/cpf"
 
-export default class CadastroCliente extends Cadastro {
+export default class CadastroCliente {
     private clientes: Array<Cliente>
     private entrada: Entrada
     constructor(clientes: Array<Cliente>) {
-        super()
         this.clientes = clientes
         this.entrada = new Entrada()
     }

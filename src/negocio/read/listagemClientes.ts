@@ -1,10 +1,8 @@
-import Cliente from "../modelo/cliente";
-import Listagem from "./listagem";
+import Cliente from "../../modelo/cliente";
 
-export default class ListagemClientes extends Listagem {
+export default class ListagemClientes {
     private clientes: Array<Cliente>
     constructor(clientes: Array<Cliente>) {
-        super()
         this.clientes = clientes
     }
     public listar(): void {
